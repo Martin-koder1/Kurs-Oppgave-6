@@ -1,3 +1,40 @@
 body {
     margin: 0;
 }
+
+header {
+    border-bottom: solid 5px black;
+    animation: SlideInTop 1s ease-in;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+@keyframes SlideInTop {
+    from {
+        transform: translateY(-10vw);
+      }
+      to {
+        transform: translateY(0);
+      }
+}
+
+.HeadDirection {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.ExampleDirection {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+}
+
+section {
+    height: 100vh;
+}
