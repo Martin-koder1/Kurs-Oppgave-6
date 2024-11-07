@@ -58,10 +58,57 @@ header:hover {
     }
 }
 
+/*
 .ExampleBox:hover {
-    border: solid3px white;
-}
+    border: solid 3px white;
+    margin: 0;
+    padding: 5px;
+    color: black;
+    background-color: white;
+} (might come back to later) 
+*/
 
 section {
     height: 100vh;
+}
+
+.FirstSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.BigBox {
+    border: solid 3px black;
+    padding: 80px;
+    animation: FromTheLeft 2s ease-in;
+    border-radius: 10%;
+    background-color: #B4D2BA;
+}
+
+@keyframes FromTheLeft {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.StorBoks {
+    border: solid 3px black;
+    padding: 80px;
+    animation: FromTheRight 2s ease-in;
+    border-radius: 10%;
+    background-color: #870058;
+    color: white;
+}
+
+@keyframes FromTheRight {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
