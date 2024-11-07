@@ -8,6 +8,13 @@ header {
     position: sticky;
     top: 0;
     background-color: white;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+header:hover {
+    color: white;
+    background-color: black;
 }
 
 @keyframes SlideInTop {
@@ -24,15 +31,35 @@ header {
     gap: 50px;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    animation: FadeIn 3s;
 }
 
 .ExampleDirection {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    justify-content: space-evenly;
+    gap: 100px;
     list-style-type: none;
+    animation: FadeIn 3s;
+    font-weight: bold;
+}
+
+@keyframes FadeIn {
+    100% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    0% {
+        opacity: 0%;
+    }
+}
+
+.ExampleBox:hover {
+    border: solid3px white;
 }
 
 section {
