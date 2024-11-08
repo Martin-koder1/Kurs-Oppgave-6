@@ -88,7 +88,7 @@ section {
 
 @keyframes FromTheLeft {
     from {
-        transform: translateX(100vw);
+        transform: translateX(60vw);
     }
     to {
         transform: translateX(0);
@@ -106,7 +106,7 @@ section {
 
 @keyframes FromTheRight {
     from {
-        transform: translateX(-100vw);
+        transform: translateX(-60vw);
     }
     to {
         transform: translateX(0);
