@@ -58,11 +58,9 @@ header:hover {
     }
 }
 
-.ExampleColor {
-    
-}
 
-.ExampleColor:hover {
+
+.ExampleColor, a {
     animation: color-change 8s infinite;
 }
 
@@ -113,6 +111,32 @@ section {
     scale: 1.1;
 }
 
+.SecretBox {
+    border: solid 3px black;
+    width: 10%;
+    padding: 80px;
+    animation: FromTheTop 2s ease-in;
+    border-radius: 8%;
+    background-color: #7765E3;
+    color: #7765E3;
+    transition-duration: 10s;
+    transition-timing-function: ease-in;
+}
+
+@keyframes FromTheTop {
+    from {
+        transform: translateY(-100vw);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.SecretBox:hover {
+    background-color: #313638;
+    rotate: 360deg;
+}
+
 .StorBoks {
     border: solid 3px black;
     padding: 80px;
@@ -134,8 +158,8 @@ section {
 }
 
 .StorBoks:hover {
+    rotate: 360deg;
     background-color: #B4D2BA;
     color: black;
-    rotate: 360deg;
     scale: 0.9;
 }
