@@ -58,15 +58,24 @@ header:hover {
     }
 }
 
-/*
-.ExampleBox:hover {
-    border: solid 3px white;
-    margin: 0;
-    padding: 5px;
-    color: black;
-    background-color: white;
-} (might come back to later) 
-*/
+.ExampleColor {
+    
+}
+
+.ExampleColor:hover {
+    animation: color-change 8s infinite;
+}
+
+@keyframes color-change {
+    0% {color: red;}
+    15% {color: orange;}
+    30% {color: yellow;}
+    45% {color: green;}
+    60% {color: blue;}
+    75% {color: indigo;}
+    90% {color: violet;}
+    100% {color: rgb(255, 69, 69);}
+}
 
 section {
     height: 100vh;
@@ -84,6 +93,8 @@ section {
     animation: FromTheLeft 2s ease-in;
     border-radius: 10%;
     background-color: #B4D2BA;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 
 @keyframes FromTheLeft {
@@ -95,6 +106,13 @@ section {
     }
 }
 
+.BigBox:hover {
+    background-color: #870058;
+    color: white;
+    rotate: -360deg;
+    scale: 1.1;
+}
+
 .StorBoks {
     border: solid 3px black;
     padding: 80px;
@@ -102,6 +120,8 @@ section {
     border-radius: 10%;
     background-color: #870058;
     color: white;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 
 @keyframes FromTheRight {
@@ -111,4 +131,11 @@ section {
     to {
         transform: translateX(0);
     }
+}
+
+.StorBoks:hover {
+    background-color: #B4D2BA;
+    color: black;
+    rotate: 360deg;
+    scale: 0.9;
 }
