@@ -127,9 +127,11 @@ section {
 @keyframes FromTheTop {
     from {
         transform: translateY(-100vw);
+        opacity: 0%;
     }
     to {
         transform: translateY(0);
+        opacity: 100%;
     }
 }
 
@@ -190,5 +192,26 @@ section {
 }
 
 .BouncingAround:hover {
+    animation-play-state: paused;
+}
+
+.JumpingAround {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    animation: jump 1s infinite alternate;
+}
+
+@keyframes jump {
+    from {
+        transform: translateY(200px) translateX(200px);
+    }
+    to {
+        transform: translateY(-200px) translateX(-200px);
+    }
+}
+
+.JumpingAround:hover {
     animation-play-state: paused;
 }
