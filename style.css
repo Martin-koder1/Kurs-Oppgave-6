@@ -275,9 +275,28 @@ section {
         opacity: 25%;
         background-color: blue;
     }
-    100% {
+    80% {
         transform: translateY(31vw) translateX(0vw) rotate(-2880deg);
         opacity: 100%;
         background-color: green;
+    }
+}
+
+footer {
+    display: flex;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.MovingEmail:hover {
+    animation: email 5s ease-in;
+}
+
+@keyframes email {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(75vw);
     }
 }
