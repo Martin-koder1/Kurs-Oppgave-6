@@ -245,7 +245,39 @@ section {
 
 .ThirdSection {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     border-bottom: solid 5px black;
+}
+
+.SpinningBall {
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: White;
+    background-image: url(https://freepngimg.com/save/117468-wheel-bicycle-free-hd-image/1000x1000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    position: absolute;
+    animation-name: ball;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball {
+    33% {
+        transform: translateY(0) translateX(82vw) rotate(1800deg);
+        opacity: 50%;
+        background-color: red;
+    }
+    66% {
+        transform: translateY(31vw) translateX(82vw) rotate(-1080deg);
+        opacity: 25%;
+        background-color: blue;
+    }
+    100% {
+        transform: translateY(31vw) translateX(0vw) rotate(-2880deg);
+        opacity: 100%;
+        background-color: green;
+    }
 }
