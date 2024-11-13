@@ -246,6 +246,7 @@ section {
 .ThirdSection {
     display: flex;
     border-bottom: solid 5px black;
+    height: 80vh;
 }
 
 .SpinningBall {
@@ -271,12 +272,12 @@ section {
         background-color: red;
     }
     66% {
-        transform: translateY(31vw) translateX(82vw) rotate(-1080deg);
+        transform: translateY(23vw) translateX(82vw) rotate(-1080deg);
         opacity: 25%;
         background-color: blue;
     }
     80% {
-        transform: translateY(31vw) translateX(0vw) rotate(-2880deg);
+        transform: translateY(23vw) translateX(0vw) rotate(-2880deg);
         opacity: 100%;
         background-color: green;
     }
@@ -297,6 +298,6 @@ footer {
         transform: translateX(0);
     }
     to {
-        transform: translateX(75vw);
+        transform: translateX(100vw);
     }
 }
