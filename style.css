@@ -141,7 +141,7 @@ section {
     rotate: 360deg;
 }
 
-.StorBoks {
+.RightBox {
     border: solid 3px black;
     padding: 80px;
     animation: FromTheLeft 2s ease-in;
@@ -161,7 +161,7 @@ section {
     }
 }
 
-.StorBoks:hover {
+.RightBox:hover {
     rotate: 360deg;
     background-color: #B4D2BA;
     color: black;
